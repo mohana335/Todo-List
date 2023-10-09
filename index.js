@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
 
-mongoose.connect('mongodb://127.0.0.1:27017/todolistDB')
+mongoose.connect('mongodb+srv://mohanarahman335:PHnqy7pyKZwiNThP@cluster0.laip88f.mongodb.net/todolistDB')
         .then(() => console.log("Database connected!"))
         .catch(err => console.log(err));
 
